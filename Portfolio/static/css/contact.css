@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+.playball-regular {
+    font-family: "Playball", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  /* font-family: "Barlow Condensed", sans-serif;
+  font-weight: 100;
+  font-style: normal; */
+
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+/* family: "Rubik", sans-serif;
+  font-optical-sizing: auto; */
+  /* font- */
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+  /* font-family: "Oswald", sans-serif; */
+
+
+
+#about a{
+    color: #000;
+    font-style: italic;
+}
+
+
+
+.body {
+    margin: 0 50px;
+    max-width: 100vw;
+}
+
+.active {
+    color: #000;
+    font-weight: 600;
+}
+
+h1 {
+    color: #000;
+}
+
+h3 {
+    color: #000;
+    font-family: "Rubik", sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 80px;
+}
+
+.header h1 {
+    margin-left: 10px;
+    font-size: 50px;
+    font-weight: 500;
+    font-family: "Playball", cursive;
+}
+
+.header h1 a {
+    color: #000;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav li {
+    padding: 10px 30px;
+    margin: 10px 20px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 20px;
+}
+
+nav li :hover {
+    transform: scale(1.6);
+    
+}
+
+nav li a {
+    color: rgb(56, 56, 56);
+}
+
+nav li a:hover {
+    color: black;
+}
+
+.form {
+    padding: 50px 10px;
+}
+
+.reach-me {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+.form h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.message {
+    margin-bottom: 10px;
+}
+
+
+textarea {
+    width: 400px;
+    height: 200px;
+    resize: none;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+}
+
+
+input {
+    padding: 8px 10px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background-color: rgb(155, 154, 154);
+    font-size: 18px;
+}
+
+input:hover {
+    transform: scale(1.05);
+    color: #fff;
+}
+
+.contact {
+    width: 700px;
+    font-size: 25px;
+    line-height: 1.5em;
+}
+
+.contact .time {
+    font-size: 21px;
+}
+
+
+
+
+footer {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer div {
+    margin: 20px;
+}
+
+footer p {
+    font-size: 18px;
+}
+
+footer a {
+    padding: 0 5px;
+}
+
+footer span {
+    font-weight: bold;
+}
+
+@media (max-width: 1025px) {
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav {
+        margin-top: 20px;
+    }
+
+    nav li {
+        padding: 0 20px;
+        margin: 0 20px;
+    }
+
+    .reach-me {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 50px;
+    }
+
+
+}
+
+@media (max-width: 769px) {
+    body {
+        transform: scale(1);
+        text-align: center;
+    }
+
+    .reach-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+
+}
+
+@media (max-width: 540px) {
+    .body {
+        margin-top: 0px;
+        transform: scale(1);
+    }
+
+    .reach-me .contact {
+        width: 500px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 380px) {
+    .body {
+        margin-top: 0px;
+        transform: scale(1);
+    }
+}
+
+@media (max-width:330px) {
+    nav li {
+        margin: 0 8px;
+        padding: 0 6px;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    nav li{
+        font-size: 15px;
+    }
+
+    .form h3 {
+        font-size: 20px;
+    }
+
+    textarea {
+        width: 250px;
+        height: 70px;
+    }
+
+    input {
+        padding: 5px 8px;
+    }
+
+    .contact {
+        width: 10px;
+        transform: scale(.5);
+    }
+    
+    .contact p {
+        font-size: 1.2em;
+    }
+
+    .contact .time {
+        font-size: 1.05em;
+    }
+}
